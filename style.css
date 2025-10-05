@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f8f8;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  animation: fadeInPage 1s ease forwards;
+  
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header, footer {
+  background: #224466;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  animation: slideInDown 0.8s ease forwards;
+  
+}
+
+@keyframes slideInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  letter-spacing: 2px;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+header p {
+  margin: 8px 0 0;
+  font-style: italic;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1.4s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+img {
+  max-width: 150px;
+  border-radius: 6px;
+  margin-top: 12px;
+  animation: bounceIn 1.5s ease forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 8px;
+  animation: fadeInSection 1.6s ease forwards;
+}
+
+@keyframes fadeInSection {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  margin-bottom: 28px;
+}
+
+h2 {
+  color: #224466;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+ul {
+  list-style: square;
+  padding-left: 30px;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+ul li {
+  margin-bottom: 8px;
+  cursor: default;
+  transition: transform 0.2s ease, color 0.3s ease, font-size 0.3s ease;
+  font-size: 1rem;
+}
+
+ul li:hover {
+  color: #224466;
+  transform: translateX(6px);
+  font-size: 1.3rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+footer small {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 15px 12px;
+    margin: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 80px;
+    margin-top: 6px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  ul li:hover {
+    font-size: 1.1rem;
+  }
+}
